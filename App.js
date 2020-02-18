@@ -2,9 +2,9 @@ import { AppRegistry } from 'react';
 import {createAppContainer } from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import Home from './Home';
-import About from './About';
-import Add from './Add';
+import Home from './components/Home';
+import About from './components/About';
+import Add from './components/Add';
 
 const MainNavigator = createStackNavigator({
   Home: { screen:  Home},
