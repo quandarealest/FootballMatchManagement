@@ -11,7 +11,6 @@ class About extends Component{
     const name = JSON.stringify(navigation.getParam('name')).replace(regex, '');
     const capacity = JSON.stringify(navigation.getParam('capacity')).replace(regex, '');
     const address = JSON.stringify(navigation.getParam('address')).replace(regex, '');
-    console.log(imageURL)
     return (
         <View style={AboutStyles.container}>
           <Image style={AboutStyles.picture} source= {{ uri: imageURL }} />
