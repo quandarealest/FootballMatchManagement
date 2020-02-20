@@ -60,3 +60,5 @@ const fieldReducer = (state = initialState, action) => {
       return state;
   }
 }
+
+export default fieldReducer;

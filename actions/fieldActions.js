@@ -15,9 +15,15 @@ export function addNewFieldSuccess(){
   }
 }
 
-export function addNewFieldFail(error){
+export function addNewFieldFailed(error){
   return {
     type: ADD_NEW_FIELD_FAILED,
     error
   }
+}
+
+export const actions = {
+  addNewField,
+  addNewFieldSuccess,
+  addNewFieldFailed,
 }

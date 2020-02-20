@@ -50,7 +50,8 @@ export default class Add extends Component {
 
   submitNewField = () => {
     const { photo, name, address, capacity } = this.state;
-    alert('name: ' + name + ', address: ' + address + ', capacity: ' + capacity);
+    const { addNewField } = this.props;
+    addNewField({ photo, name, address, capacity });
   }
 
   render() {
